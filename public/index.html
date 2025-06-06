@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CDP - Cumulative Distribution Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- ========================================
+         HEADER SECTION
+         ======================================== -->
+
+    <div class="header-section">
+        <div class="content-wrapper">
+            <header class="header">
+                <div class="logo-section">
+                    <div class="logo">CDP</div>
+                    <div class="logo-subtitle">Cumulative Distribution Platform</div>
+                </div>
+                <button class="connect-wallet-btn">Connect Wallet</button>
+            </header>
+        </div>
+    </div>
+
+    <!-- ========================================
+         HERO SECTION
+         ======================================== -->
+
+    <div class="main-content-section">
+        <div class="content-wrapper">
+            <main class="main-content">
+                <div class="hero-section">
+                    <h2 class="hero-title">Earn dividends just by holding your tokens.</h2>
+                </div>
+
+                <div class="hero-description">
+                    <p>Invest in trustworthy token projects that generate real revenue. Hold to accumulate, then stake
+                        to access your rewards as zero-interest loan.</p>
+                    <button class="discover-btn">Discover Token Projects</button>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <!-- ========================================
+         STEPS SECTION
+         ======================================== -->
+
+    <div class="steps-section-wrapper">
+        <div class="content-wrapper">
+            <section class="steps-section">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Choose from verified, revenue generating projects.</h3>
+                    <p class="step-description">Every project is joining with the commitment to becoming a serious
+                        revenue seeking business.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Buy tokens to start accumulating dividends</h3>
+                    <p class="step-description">Projects send funds to the protocol, and your tokens start accumulating
+                        your share just by holding the tokens.</p>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Stake to access accumulated revenue as zero-interest loan.</h3>
+                    <p class="step-description">When you stake your tokens, you get access to 90% of your share of the
+                        accumulated rewards.</p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- ========================================
+         PROJECTS SECTION
+         ======================================== -->
+
+    <div class="projects-section-wrapper">
+        <div class="content-wrapper">
+            <!-- Tab Navigation -->
+            <div class="projects-tabs">
+                <button class="tab-btn active" data-tab="new">New Projects</button>
+                <button class="tab-btn" data-tab="revenue">Top Revenue</button>
+                <button class="tab-btn" data-tab="all">All Projects</button>
+                <button class="list-project-btn">List Your Token Project</button>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projectsGrid">
+                <!-- Projects will be loaded here by JavaScript -->
+            </div>
+
+            <!-- Show More Button -->
+            <div class="show-more-container">
+                <button class="show-more-btn">Show More</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         FAQ SECTION
+         ======================================== -->
+
+    <div class="faq-section-wrapper">
+        <div class="content-wrapper">
+            <div class="faq-container">
+                <div class="faq-left">
+                    <h2 class="faq-title">FAQs</h2>
+                    <p class="faq-subtitle">Do you have more questions?</p>
+                    <button class="contact-btn">Contact Us</button>
+                </div>
+
+                <div class="faq-right">
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="0">
+                            <span>What is CDP and how does it work?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer" data-answer="0">
+                            <p>CDP is a protocol that lets crypto tokens distribute revenue to their holders. Just by
+                                holding a supported token, you automatically start earning a share of the rewards
+                                accumulated by the project.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="1">
+                            <span>Do I need to stake to earn rewards?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer" data-answer="1">
+                            <p>No. Rewards accumulate automatically while you hold tokens. But to unlock and use your
+                                rewards, you'll need to stake your tokens.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="2">
+                            <span>What happens when I stake my tokens?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer" data-answer="2">
+                            <p>Staking gives you access to 90% of your earned rewards. Your tokens are held by the
+                                protocol while staked – you can get them back by unstaking.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="3">
+                            <span>Can I unstake without returning the rewards?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer" data-answer="3">
+                            <p>Yes, sometimes. If more rewards were added after you staked, you can often unstake part
+                                of your tokens without returning anything. To fully unstake, just return the rewards you
+                                claimed.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="4">
+                            <span>How are rewards calculated?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer" data-answer="4">
+                            <p>Rewards are based on your share of the total token supply and the amount of value the
+                                project distributes to the protocol.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="5">
+                            <span>Do I need to use a special wallet?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer" data-answer="5">
+                            <p>No. Any Ethereum-compatible wallet works. Just hold the supported token to start
+                                accumulating rewards.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="6">
+                            <span>How do I know if a project is legit?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer" data-answer="6">
+                            <p>Projects listed on the platform go through a verification process and are approved by our
+                                DAO community. Only verified, yield-generating projects are shown.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" data-faq="7">
+                            <span>Where can I track my earnings?</span>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer" data-answer="7">
+                            <p>You'll have access to a dashboard showing your holdings, accumulated rewards, staking
+                                status, and full history.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         CTA SECTION
+         ======================================== -->
+
+    <div class="cta-section-wrapper">
+        <div class="content-wrapper">
+            <div class="cta-container">
+                <div class="cta-content">
+                    <p class="cta-subtitle">Are you a token project owner with serious revenue seeking project?</p>
+                    <h2 class="cta-title">Be among the first wave of projects setting <span class="highlight">a new
+                            benchmark</span> for value-driven tokens.</h2>
+                    <div class="cta-buttons">
+                        <button class="learn-more-btn">Learn More</button>
+                        <button class="integrate-btn">Integrate My Project</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         FOOTER SECTION
+         ======================================== -->
+
+    <div class="footer-section-wrapper">
+        <div class="content-wrapper">
+            <div class="footer-content">
+                <h2 class="footer-logo">CDP</h2>
+                <div class="footer-social">
+                    <a href="https://google.com/search?q=X+twitter" target="_blank" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                    <a href="https://google.com/search?q=Discord" target="_blank" class="social-link">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         LEARN MORE SUBPAGE
+         ======================================== -->
+
+    <div id="learnMorePage" class="subpage" style="display: none;">
+
+        <!-- Subpage Header -->
+        <div class="subpage-header">
+            <div class="content-wrapper">
+                <div class="subpage-nav">
+                    <div class="logo-section clickable-logo">
+                        <div class="logo">CDP</div>
+                        <div class="logo-subtitle">Cumulative Distribution Platform</div>
+                    </div>
+                    <button class="connect-wallet-btn">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subpage Content -->
+        <div class="subpage-content">
+            <div class="content-wrapper">
+
+                <!-- Hero Section -->
+                <div class="learn-hero-section">
+                    <h1 class="learn-hero-title">Transform your token<br>into value sharing asset</h1>
+                    <p class="learn-hero-description">Reward your community with real, trackable yields, without
+                        changing your tokenomics or building anything new.</p>
+                </div>
+
+                <!-- Three Features Section -->
+                <div class="three-features-section">
+                    <div class="feature-item">
+                        <div class="feature-content">
+                            <div class="feature-icon-placeholder"></div>
+                            <h3 class="feature-title">Automatically share revenue with your token holders</h3>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-content">
+                            <div class="feature-icon-placeholder"></div>
+                            <h3 class="feature-title">Encourage loyalty and long-term holding. Reduce sell pressure.
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-content">
+                            <div class="feature-icon-placeholder"></div>
+                            <h3 class="feature-title">Stand out as a serious, yield-generating project with real value
+                                utility.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How does it work Section - Full Width Gray Background -->
+            <div class="how-it-works-wrapper">
+                <div class="content-wrapper">
+                    <div class="how-it-works-section">
+                        <h2 class="how-it-works-title">How does it work?</h2>
+
+                        <div class="work-steps">
+                            <div class="work-step">
+                                <div class="work-step-content">
+                                    <div class="work-step-number">1</div>
+                                    <p class="work-step-text">Send project revenue (in any ERC-20 token) to the CDP
+                                        protocol</p>
+                                </div>
+                            </div>
+                            <div class="work-step">
+                                <div class="work-step-content">
+                                    <div class="work-step-number">2</div>
+                                    <p class="work-step-text">CDP tracks and distributes yield to all token holders</p>
+                                </div>
+                            </div>
+                            <div class="work-step">
+                                <div class="work-step-content">
+                                    <div class="work-step-number">3</div>
+                                    <p class="work-step-text">Users stake only to unlock their share. Rewards are
+                                        tax-efficient and claimable at any time.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="additional-info">
+                            <p>To unstake, users return the rewards they've claimed (like repaying a 0% loan). If new
+                                rewards came in after staking, some tokens can often be unstaked without repayment.</p>
+                        </div>
+
+                        <div class="button-center">
+                            <button class="integrate-my-project-btn-bottom">Integrate My Project</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer-section-wrapper">
+                <div class="content-wrapper">
+                    <div class="footer-content">
+                        <h2 class="footer-logo">CDP</h2>
+                        <div class="footer-social">
+                            <a href="https://google.com/search?q=X+twitter" target="_blank" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="https://google.com/search?q=Discord" target="_blank" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ========================================
+         PROJECT DETAIL SUBPAGE
+         ======================================== -->
+
+    <div id="projectDetailPage" class="subpage" style="display: none;">
+
+        <!-- Subpage Header -->
+        <div class="subpage-header">
+            <div class="content-wrapper">
+                <div class="subpage-nav">
+                    <div class="logo-section clickable-logo">
+                        <div class="logo">CDP</div>
+                        <div class="logo-subtitle">Cumulative Distribution Platform</div>
+                    </div>
+                    <button class="connect-wallet-btn">Connect Wallet</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Project Detail Content -->
+        <div class="subpage-content">
+            <div class="content-wrapper">
+
+                <!-- Back Navigation -->
+                <div class="project-back-nav">
+                    <button class="back-to-projects-btn">← Back to Projects</button>
+                </div>
+
+                <!-- Project Header -->
+                <div class="project-detail-header">
+                    <div class="project-detail-logo">
+                        <img id="projectDetailLogo" src="" alt="">
+                    </div>
+                    <div class="project-detail-info">
+                        <h1 class="project-detail-name">
+                            <span id="projectDetailName">Project Name</span>
+                            <span class="project-detail-symbol" id="projectDetailSymbol">SYM</span>
+                        </h1>
+                        <p class="project-detail-website" id="projectDetailWebsite">website.com</p>
+                        <p class="project-detail-description" id="projectDetailDescription">Project description goes
+                            here...</p>
+                    </div>
+                </div>
+
+                <!-- Project Stats Grid -->
+                <div class="project-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-label">Total Funds Raised</div>
+                        <div class="stat-value" id="projectTotalFunds">$0</div>
+                        <div class="stat-subtext" id="projectTotalFundsEth">0 ETH</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Token Price</div>
+                        <div class="stat-value" id="projectTokenPrice">$0</div>
+                        <div class="stat-subtext" id="projectTokenPriceEth">0 ETH</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">Total Fundings</div>
+                        <div class="stat-value" id="projectTotalRounds">0</div>
+                        <div class="stat-subtext">funding rounds</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-label">First Funding</div>
+                        <div class="stat-value" id="projectFirstFunding">Jan 2024</div>
+                        <div class="stat-subtext">launch date</div>
+                    </div>
+                </div>
+                <div class="final-ratio-section">
+    <div class="final-ratio-card">
+        <div class="final-ratio-label">Final Funding Ratio</div>
+        <div class="final-ratio-value" id="projectFinalRatio">0%</div>
+        <div class="final-ratio-subtext">of total token value funded</div>
+    </div>
+</div>
+            </div>
+
+            <!-- Funding Chart Section - Full Width Gray Background -->
+            <div class="funding-chart-wrapper">
+                <div class="content-wrapper">
+                    <div class="funding-chart-section">
+                        <h2 class="funding-chart-title">Funding per $1 Worth of Tokens</h2>
+                        <div class="funding-chart-container">
+                            <div id="projectFundingChart" class="project-funding-chart">
+                                <!-- Chart will be generated here -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content-wrapper">
+                <!-- Funding History Table -->
+                <div class="funding-history">
+                    <h3 class="funding-history-title">Funding History</h3>
+                    <div class="funding-table">
+                        <div class="funding-table-header">
+                            <div>Round</div>
+                            <div>Amount</div>
+                            <div>Date</div>
+                            <div>Funding/$1</div>
+                            <div>Funding %</div>
+                        </div>
+                        <div id="fundingTableBody" class="funding-table-body">
+                            <!-- Funding rows will be generated here -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-actions">
+                    <button class="buy-tokens-btn">Buy Tokens</button>
+                    <button class="stake-tokens-btn">Stake Tokens</button>
+                    <button class="unstake-tokens-btn">Unstake Tokens</button>
+                    <button class="burn-tokens-btn">Burn Tokens</button>
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer-section-wrapper">
+                <div class="content-wrapper">
+                    <div class="footer-content">
+                        <h2 class="footer-logo">CDP</h2>
+                        <div class="footer-social">
+                            <a href="https://google.com/search?q=X+twitter" target="_blank" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                            </a>
+                            <a href="https://google.com/search?q=Discord" target="_blank" class="social-link">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028 14.09 14.09 0 0 0 1.226-1.994.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
